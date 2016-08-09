@@ -69,10 +69,11 @@
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/fillet_10_green_bg"
         android:textSize="@dimen/text_small"
         android:textColor="@color/white"
+        android:padding="@dimen/padding_leftandright"
         android:layout_marginTop="15dp"
         android:text="登录"
         android:layout_marginLeft="10dp"

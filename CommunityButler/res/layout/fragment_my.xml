@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/my_bg_color" >
+
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+                     <RelativeLayout
+                    android:id="@+id/headlayout"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle_head_bg"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/head"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/trends_like" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/nickname"
+                    style="@style/text_white_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="仙林大师兄" />
+                </LinearLayout>
+               
+
+            </RelativeLayout>
+
+
+            <View
+                style="@style/line_horizontal"
+                android:layout_height="5dp" />
+
+            
+            <LinearLayout
+                android:id="@+id/examination_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/text_43_black_small"
+                    android:layout_marginLeft="10dp"
+                    android:text="修改密码" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fillet_10_green_bg"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/white"
+        android:padding="@dimen/padding_leftandright"
+        android:layout_marginTop="15dp"
+        android:text="退出登录"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
